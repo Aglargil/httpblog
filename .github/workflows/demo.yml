@@ -13,7 +13,7 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          apt install markdown
+          sudo apt install markdown
           markdown index.md
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
